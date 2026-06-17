@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-LAB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-xl-block d-none border-bottom border-light py-4 ">
+            <div class="container">
+                <div class="row  justify-content-between d-xl-flex d-none">
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100">
+                            <a href="index.html">
+                                <img src="icons/main-icons/logo.svg" alt="" class="img-fluid logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="tel:+998901557888" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                                <span>+99899 873 80 00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="mailto:info@technoplastic.uz" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <span>
+                                    info@tp-lab.uz
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center  gap-3">
+                            <button class="bg-transparent px-3 py-1 w-100 ff-second search-btn justify-content-between rounded-5 d-flex align-items-center gap-2 justify-content-start">
+                                <span>Поиск</span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar-dark navbar bg-corp text-white navbar-expand-xl sticky-lg-top">
+        <div class="container">
+            <div class="d-xl-none w-100 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="icons/main-icons/logo-white.svg" alt="" class="logo">
+                </a>
+
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto ff-second py-3 gap-lg-5 gap-3">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Услуги
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quality-control.html">Испытания и контроль качества</a></li>
+                                <li><a class="dropdown-item" href="analysis.html">Анализ добавок и мастербатчей</a></li>
+                                <li><a class="dropdown-item" href="optimization.html">R&D и оптимизация процессов</a></li>
+                                <li><a class="dropdown-item" href="technical-consulting.html">Технический консалтинг</a></li>
+                                <li><a class="dropdown-item" href="reverse-engineering.html">Реверс-инжиниринг</a></li>
+                                <li><a class="dropdown-item" href="examination-of-deffects.html">Экспертиза брака</a></li>
+                                <li><a class="dropdown-item" href="arbitration-trials.html">Арбитражные испытания</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dessision.html">Решения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Banner section -->
+        <section>
+            <div class="position-relative d-md-block d-none">
+                <div class="overlay d-xl-none position-absolute z-2 w-100 h-100 top-0 left-0">
+                </div>
+                <img src="images/home-page/banner-img.png" alt="" class="img-fluid w-100">
+                <div class="position-absolute w-100 h-100 z-3 top-0 left-0 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-md-12">
+                                <div class="w-100">
+                                    <p class="text-md text-corp">Независимый инженерно-испытательный центр полимерных материалов</p>
+                                    <h1 class="fw-semibold text-2xl my-4 my-lg-5">
+                                        Профессиональные испытания и инженерный анализ полимеров
+                                    </h1>
+                                    <p class="text-md ">От производственного опыта к инженерной точности. Лаборатория, созданная практиками для решения реальных индустриальных зада</p>
+                                    <div class="mt-lg-5 mt-3 d-flex align-items-center flex-wrap gap-3">
+                                        <a href="#services" class="btn btn-corp">Наши услуги</a>
+                                        <a href="contacts.html" class="btn btn-outline-corp">Связаться с нами</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-none position-relative">
+                <img src="images/home-page/banner-img-mobile.png" alt="" class="img-fluid w-100">
+                <div class="position-relative z-2 mt-custom">
+                    <div class="container">
+                        <div class="w-100 text-center">
+                            <h1 class="fw-semibold text-2xl my-4 my-lg-5">
+                                Профессиональные испытания и инженерный анализ полимеров
+                            </h1>
+                            <p class="text-md text-corp">Независимый инженерно-испытательный центр полимерных материалов</p>
+
+                            <p class="text-md ">От производственного опыта к инженерной точности. Лаборатория, созданная практиками для решения реальных индустриальных зада</p>
+                            <div class="mt-lg-5 mt-3 d-flex align-items-center flex-wrap gap-3">
+                                <a href="#services" class="btn btn-corp w-100">Наши услуги</a>
+                                <a href="contacts.html" class="btn btn-outline-corp w-100">Связаться с нами</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h3 class="d-lg-none title-underline text-lg w-fit-content mx-auto mb-5">О компании</h3>
+                <div class="row gy-4 flex-lg-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <img src="images/home-page/1.png" alt="" class="img-fluid w-100">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="w-100 h-100  d-flex align-items-center">
+                            <div class="w-100 ">
+                                <h3 class="d-lg-block d-none title-underline text-lg w-fit-content">О компании</h3>
+                                <p class="text-sm my-lg-5 my-4 text-lg-start text-center"><span class="text-corp fw-semibold">TP-LAB™</span> помогает производителям контролировать качество сырья, снижать производственный брак, расследовать причины дефектов и принимать инженерно обоснованные решения на основе
+                                    лабораторных испытаний
+                                    <br><br> Испытания — это не отчет. Это управление стабильностью производства
+                                    <br><br> Нестабильный материал — это производственный риск</p>
+                                <a href="about.html" class="btn btn-corp w-lg-fit-content">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h3 class="mx-lg-0 mx-auto title-underline text-lg w-fit-content mx-auto mb-5">Наши услуги</h3>
+                <div class="row gy-4">
+                    <div class="col-lg-4 ">
+                        <div class="w-100 h-100 card-container d-flex flex-column">
+                            <img src="images/home-page/services/1.png" alt="" class="img-fluid w-100 object-fit-cover service-card-img">
+
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1 w-100">
+                                <span class="text-corp text-md fw-semibold">01</span>
+
+                                <p class="text-sm my-3 fw-medium">
+                                    Базовые испытания
+                                </p>
+
+                                <p class="text-xs opacity-75">
+                                    Комплексное исследование физико-механических и тепловых свойств полимеров. Это база для любого производства, позволяющая избежать поломок оборудования и рекламаций от конечных потребителей
+                                </p>
+
+                                <a href="quality-control.html" class="text-corp d-block mt-auto">
+                                    Подробнее
+                                    <i class="bi bi-arrow-right-short ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 ">
+                        <div class="w-100 h-100 card-container d-flex flex-column">
+                            <img src="images/home-page/services/2.png" alt="" class="img-fluid w-100 object-fit-cover service-card-img">
+
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1 w-100">
+                                <span class="text-corp text-md fw-semibold">02</span>
+
+                                <p class="text-sm my-3 fw-medium">
+                                    Анализ добавок и мастербатчей
+                                </p>
+
+                                <p class="text-xs opacity-75">
+                                    Мастербатчи и добавки составляют малую долю в рецептуре, но на 90% определяют свойства готового изделия. Мы проводим глубокий анализ концентратов, проверяя их совместимость с полимерной матрицей и качество распределения пигментов
+                                </p>
+
+                                <a href="quality-control.html" class="text-corp d-block mt-auto">
+                                    Подробнее
+                                    <i class="bi bi-arrow-right-short ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="w-100 h-100 card-container d-flex flex-column">
+                            <img src="images/home-page/services/3.png" alt="" class="img-fluid w-100 object-fit-cover service-card-img">
+
+                            <div class="px-3 py-4 d-flex flex-column flex-grow-1 w-100">
+                                <span class="text-corp text-md fw-semibold">03</span>
+
+                                <p class="text-sm my-3 fw-medium">
+                                    R&D и оптимизация процессов
+                                </p>
+
+                                <p class="text-xs opacity-75">
+                                    R&D в TP-LAB™ — от идеи до стабильного производства. Разрабатываем формулы и отлаживаем технологии без дорогостоящих производственных экспериментов
+                                </p>
+
+                                <a href="quality-control.html" class="text-corp d-block mt-auto">
+                                    Подробнее
+                                    <i class="bi bi-arrow-right-short ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h3 class="mx-lg-0 mx-auto title-underline text-lg w-fit-content mx-auto mb-5">Почему выбирают нас?</h3>
+                <div class="row pt-lg-5 gy-xxl-0 gy-4">
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 px-3 pb-xxl-5 d-flex gap-3">
+                            <img src="icons/home-page/1.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Базовые испытания</p>
+                                <p class="text-xs">Объективная оценка материалов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 ps-3 pb-xxl-5 d-flex gap-3 border-xxl-start">
+                            <img src="icons/home-page/2.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Производственный опыт</p>
+                                <p class="text-xs">Понимание реальной переработки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 ps-3 pb-xxl-5 d-flex gap-3 border-xxl-start">
+                            <img src="icons/home-page/3.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Международные методы</p>
+                                <p class="text-xs">Объективная оценка материалов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 ps-3 pb-xxl-5 d-flex gap-3 border-xxl-start">
+                            <img src="icons/home-page/4.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Инженерный подход</p>
+                                <p class="text-xs">Анализ причин, а не только цифр</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 px-3  d-flex gap-3">
+                            <img src="icons/home-page/5.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Контроль партий</p>
+                                <p class="text-xs">Проверка стабильности сырья и продукции</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 ps-3  d-flex gap-3 border-xxl-start">
+                            <img src="icons/home-page/6.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Конфиденциальность</p>
+                                <p class="text-xs">Защита рецептур и данных клиента</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 ps-3  d-flex gap-3 border-xxl-start">
+                            <img src="icons/home-page/7.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Анализ дефектов</p>
+                                <p class="text-xs">Поиск причин брака и нестабильности</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-4 col-md-6">
+                        <div class="w-100 ps-3  d-flex gap-3 border-xxl-start">
+                            <img src="icons/home-page/8.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="fw-semibold text-sm mb-1">Техническая поддержка</p>
+                                <p class="text-xs">Помощь при сбоях производства</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5">
+            <div class="container">
+                <h3 class="mx-lg-0 mx-auto title-underline text-lg w-fit-content mx-auto mb-4">Инженерная компетенция</h3>
+                <p class="text-md text-lg-start text-center mb-5">Подтвержденная экспертиза TP-LAB™
+                </p>
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <img src="images/home-page/2.png" alt="" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="pt-lg-5 w-100 h-100 ">
+                            <div class="w-100 h-100  position-relative table-line">
+                                <div class="row gy-lg-0 gy-2 border-bottom pb-2 mb-4 ">
+                                    <div class="col-lg-1">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <span class="text-md fw-semibold text-corp">01</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="w-100 h-100 text-sm d-flex align-items-start">
+                                            <p class="mb-0  "><span class="d-lg-inline d-none">— </span> <span class="fw-semibold">Полимерные системы</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <p class="mb-0 text-xs">
+                                                PE, PP, PET, ABS, PA, PVC
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gy-lg-0 gy-2 border-bottom pb-2 mb-4 ">
+                                    <div class="col-lg-1">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <span class="text-md fw-semibold text-corp">02</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="w-100 h-100 text-sm d-flex align-items-start">
+                                            <p class="mb-0  "><span class="d-lg-inline d-none">— </span> <span class="fw-semibold">Методы испытаний</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <p class="mb-0 text-xs">
+                                                ASTM, ISO, DIN
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gy-lg-0 gy-2 border-bottom pb-2 mb-4 ">
+                                    <div class="col-lg-1">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <span class="text-md fw-semibold text-corp">03</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="w-100 h-100 text-sm d-flex align-items-start">
+                                            <p class="mb-0 "><span class="d-lg-inline d-none">— </span> <span class="fw-semibold">Направления испытаний</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <p class="mb-0 text-xs">
+                                                PE, PP, PET, ABS, PA, PVC
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gy-lg-0 gy-2 border-bottom pb-2 mb-4 ">
+                                    <div class="col-lg-1">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <span class="text-md fw-semibold text-corp">04</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="w-100 h-100 text-sm  d-flex align-items-start">
+                                            <p class="mb-0 "><span class="d-lg-inline d-none">— </span> <span class="fw-semibold">Методы испытаний</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="w-100 h-100  d-flex align-items-start">
+                                            <ul class="text-xs mb-0 list-unstyled">
+                                                <li>
+                                                    Физико-механические,
+                                                </li>
+                                                <li>
+                                                    Реологические,
+                                                </li>
+                                                <li>
+                                                    Оптические,
+                                                </li>
+                                                <li>
+                                                    Термические,
+                                                </li>
+                                                <li>
+                                                    Аналитические
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gy-lg-0 gy-2 border-bottom pb-2 mb-4 ">
+                                    <div class="col-lg-1">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <span class="text-md fw-semibold text-corp">04</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="w-100 h-100 text-sm d-flex align-items-start">
+                                            <p class="mb-0 "><span class="d-lg-inline d-none">— </span> <span class="fw-semibold">Методы анализа</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <p class="mb-0 text-xs">
+                                                FTIR, DSC, TGA, COF, CIE Lab*
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gy-lg-0 gy-2 pb-2 ">
+                                    <div class="col-lg-1">
+                                        <div class="w-100 h-100 d-flex align-items-start">
+                                            <span class="text-md fw-semibold text-corp">05</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="w-100 h-100 text-sm  d-flex align-items-start">
+                                            <p class="mb-0 "><span class="d-lg-inline d-none">— </span> <span class="fw-semibold">Отрасли</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="w-100 h-100  d-flex align-items-start">
+                                            <ul class="text-xs mb-0 list-unstyled">
+                                                <li>
+                                                    Упаковка,
+                                                </li>
+                                                <li>
+                                                    Трубы,
+                                                </li>
+                                                <li>
+                                                    Литье,
+                                                </li>
+                                                <li>
+                                                    Кабельные материалы,
+                                                </li>
+                                                <li>
+                                                    Masterbatch,
+                                                </li>
+                                                <li>
+                                                    Компаунды
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-white bg-corp py-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <h3 class="text-2xl fw-semibold title-underline-white pb-3 text-lg-start text-center">
+                                Какие задачи мы решаем?
+                            </h3>
+                            <p class="text-md fw-semibold mt-lg-5 mt-3 mb-5 text-lg-start text-center">TP-LAB™ помогает определить причины:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100">
+                            <ul class="text-xs list-unstyled">
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Черных точек
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Пожелтения материала
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Нестабильного COF
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Блокирования пленки
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Высокой усадки
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Плохой дисперсии
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Нестабильного MFI / MFR
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100">
+                            <ul class="text-xs list-unstyled">
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Термодеструкции
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Разрушения изделий
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Дефектов поверхности
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Нестабильного цвета
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Коробления изделий
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Различий между партиями
+                                    </p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3 mb-4">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <p class="mb-0">
+                                        Ухудшения механических свойств
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 position-relative">
+            <img src="images/home-page/3.png" alt="" class="section-img-position position-absolute d-lg-block d-none">
+            <h3 class="d-lg-none text-lg fw-semibold title-underline pb-3 w-fit-content mx-auto text-lg-start text-center">
+                С кем мы работаем?
+            </h3>
+            <p class="d-lg-none text-md fw-medium mt-3 text-lg-start text-center">Мы сотрудничаем с
+            </p>
+
+            <img src="images/home-page/3.png" alt="" class="img-fluid d-lg-none w-100 img-size-md object-fit-cover">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="w-100 py-lg-5">
+                            <h3 class="d-lg-block d-none w-fit-content text-lg fw-semibold title-underline pb-3 text-lg-start text-center">
+                                С кем мы работаем?
+                            </h3>
+                            <p class="d-lg-block d-none text-md fw-medium mt-lg-5 mt-3 mb-5 text-lg-start text-center">Мы сотрудничаем с
+                            </p>
+                            <div class="d-flex gap-lg-5 flex-lg-row flex-column">
+                                <ul class="text-xs list-unstyled mb-0">
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Производителями masterbatch
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Производителями полимерных компаундов;
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Переработчиками PE / PP / PET / ABS / PVC
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Производителями пленок и упаковки
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Трубными заводами
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Кабельными предприятиями
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul class="text-xs list-unstyled">
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Производителями литьевых изделий
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Импортерами полимерного сырья
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Дистрибьюторами добавок и пигментов
+                                        </p>
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 mb-4">
+                                        <i class="bi bi-check-circle-fill text-corp"></i>
+                                        <p class="mb-0">
+                                            Компаниями, использующими вторичные полимеры
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-corp-opacity text-white py-5">
+            <div class="container">
+                <h3 class=" mb-5 mx-lg-0 mx-auto w-fit-content text-lg fw-semibold title-underline-white pb-3 text-lg-start text-center">
+                    Что получает клиент?
+                </h3>
+                <div class="row pt-lg-5 mb-xl-5 pb-lg-5 gy-xl-0 gy-4 mb-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/9.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Результат
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Инженерные данные для производственных решений
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/10.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Рекомендации технолога
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Практические действия для производства
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/11.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Контроль поставщиков
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Проверка стабильности сырья
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/12.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Снижение рекламаций
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Подтвержденное качество продукции
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-lg-5 mb-xl-5  gy-xl-0 gy-4 ">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/13.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Анализ дефектов
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Поиск причин производственных проблем
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/14.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Снижение брака
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Меньше потерь и остановок
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/15.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Стабильность партий
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Предсказуемое поведение материала
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/home-page/16.svg" alt="" class="icon-size-sm">
+                            <div class="">
+                                <p class="text-sm fw-semibold">
+                                    Поддержка R&D
+                                </p>
+                                <p class="mb-0 text-xs">
+                                    Разработка и улучшение материалов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h3 class=" mb-5 mx-lg-0 mx-auto w-fit-content text-lg fw-semibold title-underline pb-3 text-lg-start text-center">
+                    Синергия опыта и науки
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="text-md text-lg-start text-center">
+                            Мы создали уникальную экосистему, объединив три фундаментальных компонента:
+                        </p>
+                    </div>
+                </div>
+                <div class="row gy-4 mt-lg-5 gx-lg-5 gx-0 pt-lg-5 justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <span class="text-corp text-lg fw-semibold">
+                                01
+                            </span>
+                            <p class="text-md fw-medium my-2">
+                                Производственный бэкграунд:
+                            </p>
+                            <p class="text-sm opacity-75">Мы знаем, как сырье ведет себя в шнеке экструдера и в литьевой форме</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <span class="text-corp text-lg fw-semibold">
+                                02
+                            </span>
+                            <p class="text-md fw-medium my-2">
+                                Глубокая аналитика:
+                            </p>
+                            <p class="text-sm opacity-75">Современная приборная база позволяет проводить исследования на микроуровне</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <span class="text-corp text-lg fw-semibold">
+                                03
+                            </span>
+                            <p class="text-md fw-medium my-2">
+                                Мировые стандарты:
+                            </p>
+                            <p class="text-sm opacity-75">Каждое испытание строго верифицируется по протоколам ASTM и ISO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white py-5 bg-corp ">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <img src="icons/main-icons/logo-white.svg" alt="" class="img-fluid footer-logo">
+                        <p class="my-5 text-xs">
+                            Профессиональные <br> испытания и инженерный <br> анализ полимеров
+                        </p>
+                        <p class="text-xs">
+                            Точность. Опыт, Надежность.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            УСЛУГИ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="quality-control.html">
+                                    Испытания и контроль качества
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="analysis.html">
+                                    Анализ добавок и мастербатчей
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="optimization.html">
+                                    R&D и оптимизация процессов
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="technical-consulting.html">
+                                    Технический консалтинг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="reverse-engineering.html">
+                                    Реверс-инжиниринг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="examination-of-deffects.html">
+                                    Экспертиза брака
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="arbitration-trials.html">
+                                    Арбитражные испытания
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            НАВИГАЦИЯ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="about.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="dessision.html">
+                                    Решения
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            КОНТАКТЫ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="tel:+998998738000" class="d-flex gap-1 ">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>+99899 873 80 00</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="mailto:info@tp-lab.uz" class="d-flex gap-1 ">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>info@tp-lab.uz</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <address class="d-flex gap-1 ">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>г. Ташкент, Сергелийский район, ул. Янги Сергели , д. 14 А</span>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="text-decoration-underline text-xs opacity-75 d-block text-center mt-5 pt-lg-5 fw-light">Политика кониденциальности</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>
