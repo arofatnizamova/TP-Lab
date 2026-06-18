@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-LAB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-xl-block d-none border-bottom border-light py-4 ">
+            <div class="container">
+                <div class="row  justify-content-between d-xl-flex d-none">
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100">
+                            <a href="index.html">
+                                <img src="icons/main-icons/logo.svg" alt="" class="img-fluid logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="tel:+998901557888" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                                <span>+99899 873 80 00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="mailto:info@technoplastic.uz" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <span>
+                                    info@tp-lab.uz
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center  gap-3">
+                            <button class="bg-transparent px-3 py-1 w-100 ff-second search-btn justify-content-between rounded-5 d-flex align-items-center gap-2 justify-content-start">
+                                <span>Поиск</span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar-dark navbar bg-corp text-white navbar-expand-xl sticky-lg-top">
+        <div class="container">
+            <div class="d-xl-none w-100 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="icons/main-icons/logo-white.svg" alt="" class="logo">
+                </a>
+
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto ff-second py-3 gap-lg-5 gap-3">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Услуги
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quality-control.html">Испытания и контроль качества</a></li>
+                                <li><a class="dropdown-item" href="analysis.html">Анализ добавок и мастербатчей</a></li>
+                                <li><a class="dropdown-item" href="optimization.html">R&D и оптимизация процессов</a></li>
+                                <li><a class="dropdown-item" href="technical-consulting.html">Технический консалтинг</a></li>
+                                <li><a class="dropdown-item" href="reverse-engineering.html">Реверс-инжиниринг</a></li>
+                                <li><a class="dropdown-item" href="examination-of-deffects.html">Экспертиза брака</a></li>
+                                <li><a class="dropdown-item" href="arbitration-trials.html">Арбитражные испытания</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dessision.html">Решения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Banner section -->
+        <section>
+            <div class="position-relative d-md-block d-none">
+                <div class="overlay d-xl-none position-absolute z-2 w-100 h-100 top-0 left-0">
+                </div>
+                <img src="images/about-page/banner-img.png" alt="" class="img-fluid w-100">
+                <div class="position-absolute w-100 h-100 z-3 top-0 left-0 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 col-md-12">
+                                <div class="w-100">
+                                    <h1 class="fw-semibold text-2xl my-4 my-lg-5">
+                                        О компании
+                                    </h1>
+                                    <p class="text-md ">Мы прошли путь от производственного цеха до высокотехнологичной лаборатории, что позволяет нам понимать задачи клиента изнутри</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-none position-relative">
+                <img src="images/about-page/banner-img-mobile.png" alt="" class="img-fluid w-100">
+                <div class="position-relative z-2 mt-custom">
+                    <div class="container">
+                        <div class="w-100 text-center">
+                            <h1 class="fw-semibold text-2xl my-4 my-lg-5">
+                                О компании
+                            </h1>
+                            <p class="text-md text-corp">Мы прошли путь от производственного цеха до высокотехнологичной лаборатории, что позволяет нам понимать задачи клиента изнутри</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                        <h3 class="position-relative z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Наш путь
+                        </h3>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="text-xs text-dirt text-lg-start text-center">
+                            В 2017 году в Ташкенте мы начали с переработки полимеров и выпуска продукции для промышленности. Накопленный за годы инженерный опыт в работе с сырьем, рецептурами и masterbatch лег в основу компании «Technoplastic» в 2023 году
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="text-xs text-dirt text-lg-start text-center">
+                            TP-LAB™ — это не просто лаборатория, а экспертный центр, выросший из реального сектора экономики
+                            <br><br> Наш путь начался «у станка», что дает нам уникальное преимущество: мы понимаем химию полимеров не только по учебникам, но и через призму производственных процессов
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-corp text-white ">
+            <div class="container">
+                <h3 class=" mb-5 mx-lg-0 mx-auto w-fit-content text-lg fw-semibold title-underline-white pb-3 text-lg-start text-center">
+                    Синергия опыта и науки
+                </h3>
+                <div class="row pb-lg-5">
+                    <div class="col-lg-9">
+                        <p class="text-md text-lg-start text-center">
+                            Обеспечить переработчиков пластмасс надежной инженерной поддержкой и точными данными для стабильного качества их продукции
+                        </p>
+                    </div>
+                </div>
+                <p class="fw-semibold text-md mt-5 pt-lg-5 text-lg-start text-center">Мы объединили:
+                </p>
+                <div class="row gy-4 mt-5 gx-lg-5 white justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <span class="text-white text-lg fw-semibold">
+                                01
+                            </span>
+                            <p class="text-md opacity-75">Практический производственный опыт</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <span class="text-white text-lg fw-semibold">
+                                02
+                            </span>
+                            <p class="text-md opacity-75">Глубокую лабораторную аналитику</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="w-100">
+                            <span class="text-white text-lg fw-semibold">
+                                03
+                            </span>
+                            <p class="text-md opacity-75">Международные стандарты испытаний (ASTM и ISO)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-main py-5">
+            <div class="container">
+                <h3 class="position-relative z-5 mb-5  title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                    Наши преимущества
+                </h3>
+                <div class="row gy-5 pt-lg-5">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/about-page/1.svg" alt="" class="icon-size-sm">
+                            <div class="text-dirt">
+                                <p class="text-sm fw-semibold">
+                                    Создано практиками для практиков
+                                </p>
+                                <p class="text-xs">
+                                    Мы выросли из реального производства полимеров. Мы знаем не только, как провести тест, но и как его результаты повлияют на работу вашего экструдера или ТПА в реальном цеху
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/about-page/2.svg" alt="" class="icon-size-sm">
+                            <div class="text-dirt">
+                                <p class="text-sm fw-semibold">
+                                    Эксперты в Masterbatch & Additives
+                                </p>
+                                <p class="text-xs">
+                                    Уникальный опыт разработки собственных аддитивных систем позволяет нам видеть состав материала «насквозь». Мы помогаем не просто найти отклонение, а скорректировать рецептуру для стабильного качества
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/about-page/3.svg" alt="" class="icon-size-sm">
+                            <div class="text-dirt">
+                                <p class="text-sm fw-semibold">
+                                    Глобальные стандарты испытаний
+                                </p>
+                                <p class="text-xs">
+                                    Проводим исследования в строгом соответствии с протоколами ISO и ASTM. Наши протоколы — это весомый аргумент для международного сотрудничества, арбитражных споров и тендерных процедур
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/about-page/4.svg" alt="" class="icon-size-sm">
+                            <div class="text-dirt">
+                                <p class="text-sm fw-semibold">
+                                    Больше, чем просто лаборатория
+                                </p>
+                                <p class="text-xs">
+                                    Мы не ограничиваемся сухими цифрами. TP-LAB™ выступает вашим внешним R&D-центром: от анализа состава (реверс-инжиниринг) до поиска аналогов сырья в условиях импортозамещения
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/about-page/5.svg" alt="" class="icon-size-sm">
+                            <div class="text-dirt">
+                                <p class="text-sm fw-semibold">
+                                    Прямая экономия вашего бюджета
+                                </p>
+                                <p class="text-xs">
+                                    Выявляем брак сырья до его попадания в шнек. Помогаем сократить цикл литья, уменьшить количество отходов и исключить рекламации от ваших конечных потребителей
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="w-100 h-100 d-flex gap-3">
+                            <img src="icons/about-page/6.svg" alt="" class="icon-size-sm">
+                            <div class="text-dirt">
+                                <p class="text-sm fw-semibold">
+                                    Инженерная поддержка в Ташкенте
+                                </p>
+                                <p class="text-xs">
+                                    Лаборатория расположена в индустриальном сердце Ташкента. Это обеспечивает оперативную передачу образцов, возможность выезда наших инженеров на ваш объект и быструю обратную связь
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row mb-lg-0 mb-4">
+                    <div class="col-lg-7">
+                        <div class="w-100 py-5">
+                            <h3 class="position-relative z-5 mb-5  title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                                Наша история
+                            </h3>
+                            <div class="  timeline-container">
+                                <div class="row gx-0">
+                                    <div class="col-lg-4">
+                                        <div class="w-100 pt-lg-5 ps-lg-0 ps-5 pe-lg-3 h-100 timeline">
+                                            <div class="timeline-circle bg-corp d-flex align-items-center justify-content-center">
+                                                <div class="circle-inner"></div>
+                                            </div>
+                                            <span class="text-corp text-lg">2017</span>
+                                            <p class="text-md">Основание ООО «ROYAL PLAST»:</p>
+                                            <p class="text-xs opacity-75"> Мы знаем, как сырье ведет себя в шнеке экструдера и в литьевой форме</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="w-100 pt-lg-5 ps-lg-0 ps-5 pe-lg-3 h-100 timeline">
+                                            <div class="timeline-circle bg-corp d-flex align-items-center justify-content-center">
+                                                <div class="circle-inner"></div>
+                                            </div>
+                                            <span class="text-corp text-lg">2023</span>
+                                            <p class="text-md">Ребрендинг в ООО «Technoplastic»</p>
+                                            <p class="text-xs opacity-75"> Фокус на инженерных решениях и собственных аддитивных системах</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="w-100 pt-lg-5 ps-lg-0 ps-5 pe-lg-3 h-100 timeline">
+                                            <div class="timeline-circle bg-corp d-flex align-items-center justify-content-center">
+                                                <div class="circle-inner"></div>
+                                            </div>
+                                            <span class="text-corp text-lg">2026</span>
+                                            <p class="text-md">Запуск TP-LAB™</p>
+                                            <p class="text-xs opacity-75"> Создание независимого центра для лабораторных испытаний и R&D</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="images/about-page/1.png" alt="" class="d-lg-block d-none img-fluid object-fit-cover h-100 w-100">
+                    </div>
+                </div>
+            </div>
+            <img src="images/about-page/1.png" alt="" class="img-fluid w-100 object-fit-cover d-lg-none">
+        </section>
+    </main>
+
+    <footer class="text-white py-5 bg-corp ">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <img src="icons/main-icons/logo-white.svg" alt="" class="img-fluid footer-logo">
+                        <p class="my-5 text-xs">
+                            Профессиональные <br> испытания и инженерный <br> анализ полимеров
+                        </p>
+                        <p class="text-xs">
+                            Точность. Опыт, Надежность.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            УСЛУГИ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="quality-control.html">
+                                    Испытания и контроль качества
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="analysis.html">
+                                    Анализ добавок и мастербатчей
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="optimization.html">
+                                    R&D и оптимизация процессов
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="technical-consulting.html">
+                                    Технический консалтинг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="reverse-engineering.html">
+                                    Реверс-инжиниринг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="examination-of-deffects.html">
+                                    Экспертиза брака
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="arbitration-trials.html">
+                                    Арбитражные испытания
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            НАВИГАЦИЯ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="about.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="dessision.html">
+                                    Решения
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            КОНТАКТЫ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="tel:+998998738000" class="d-flex gap-1 ">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>+99899 873 80 00</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="mailto:info@tp-lab.uz" class="d-flex gap-1 ">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>info@tp-lab.uz</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <address class="d-flex gap-1 ">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>г. Ташкент, Сергелийский район, ул. Янги Сергели , д. 14 А</span>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="text-decoration-underline text-xs opacity-75 d-block text-center mt-5 pt-lg-5 fw-light">Политика кониденциальности</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>
