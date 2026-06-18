@@ -265,6 +265,14 @@ a {
     top: 0;
 }
 
+.overlay-corp {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: var(--color-corp);
+}
+
 
 /* breackpoints */
 
@@ -315,6 +323,9 @@ a {
     }
     .btn-long {
         min-width: 250px;
+    }
+    .overlay-corp {
+        display: none;
     }
 }
 
