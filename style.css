@@ -72,14 +72,6 @@ a {
     width: fit-content;
 }
 
-.w-max-content {
-    width: max-content !important;
-}
-
-.w-lg-fit-content {
-    width: fit-content;
-}
-
 .btn {
     border-radius: 43px;
     width: 200px;
@@ -99,6 +91,18 @@ a {
 .btn-outline-white {
     border: 1px solid white;
     color: white;
+}
+
+.btn-long {
+    min-width: 300px;
+}
+
+.w-max-content {
+    width: max-content !important;
+}
+
+.w-lg-fit-content {
+    width: fit-content;
 }
 
 .bg-corp-opacity {
@@ -308,6 +312,9 @@ a {
         top: 50%;
         transform: translateY(-50%);
         right: 0;
+    }
+    .btn-long {
+        min-width: 250px;
     }
 }
 
