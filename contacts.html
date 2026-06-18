@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-LAB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-xl-block d-none border-bottom border-light py-4 ">
+            <div class="container">
+                <div class="row  justify-content-between d-xl-flex d-none">
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100">
+                            <a href="index.html">
+                                <img src="icons/main-icons/logo.svg" alt="" class="img-fluid logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="tel:+998901557888" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                                <span>+99899 873 80 00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="mailto:info@technoplastic.uz" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <span>
+                                    info@tp-lab.uz
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center  gap-3">
+                            <button class="bg-transparent px-3 py-1 w-100 ff-second search-btn justify-content-between rounded-5 d-flex align-items-center gap-2 justify-content-start">
+                                <span>Поиск</span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar-dark navbar bg-corp text-white navbar-expand-xl sticky-lg-top">
+        <div class="container">
+            <div class="d-xl-none w-100 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="icons/main-icons/logo-white.svg" alt="" class="logo">
+                </a>
+
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto ff-second py-3 gap-lg-5 gap-3">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Услуги
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quality-control.html">Испытания и контроль качества</a></li>
+                                <li><a class="dropdown-item" href="analysis.html">Анализ добавок и мастербатчей</a></li>
+                                <li><a class="dropdown-item" href="optimization.html">R&D и оптимизация процессов</a></li>
+                                <li><a class="dropdown-item" href="technical-consulting.html">Технический консалтинг</a></li>
+                                <li><a class="dropdown-item" href="reverse-engineering.html">Реверс-инжиниринг</a></li>
+                                <li><a class="dropdown-item" href="examination-of-deffects.html">Экспертиза брака</a></li>
+                                <li><a class="dropdown-item" href="arbitration-trials.html">Арбитражные испытания</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dessision.html">Решения</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Banner section -->
+        <section>
+            <div class="position-relative d-md-block d-none">
+                <div class="overlay d-xl-none position-absolute z-2 w-100 h-100 top-0 left-0">
+                </div>
+                <img src="images/contacts-page/banner-img.png" alt="" class="img-fluid w-100">
+                <div class="position-absolute w-100 h-100 z-3 top-0 left-0 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-md-12">
+                                <div class="w-100">
+
+                                    <h1 class="fw-semibold text-2xl ">
+                                        Контакты
+                                    </h1>
+                                    <p class="text-md text-corp my-4 my-lg-5">Свяжитесь с инженерами TP-LAB™</p>
+                                    <p class="text-md ">Мы всегда открыты для профессионального диалога и готовы помочь в решении ваших производственных задач</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-none position-relative">
+                <img src="images/contacts-page/banner-img-mobile.png" alt="" class="img-fluid w-100">
+                <div class="position-relative z-2 mt-custom">
+                    <div class="container">
+                        <div class="w-100 text-center">
+                            <h1 class="fw-semibold text-2xl my-4 my-lg-5">
+                                Контакты
+                            </h1>
+                            <p class="text-md text-corp">Свяжитесь с инженерами TP-LAB™</p>
+
+                            <p class="text-md ">Мы всегда открыты для профессионального диалога и готовы помочь в решении ваших производственных задач</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container py-lg-5">
+                <div class="row gy-4">
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="w-100 h-100 text-xl-start text-center">
+                            <i class="bi bi-telephone text-corp fs-1"></i>
+                            <p class="text-sm fw-semibold my-3">Телефон</p>
+                            <a href="tel:+998998738000" class="text-sm">+998 (99)873-80-00</a>
+                            <p class="text-dirt mt-3 text-xs opacity-75">
+                                (Доступны в Telegram для оперативной отправки фото дефектов и техзаданий)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="w-100 h-100 text-xl-start text-center">
+                            <i class="bi bi-envelope text-corp fs-1"></i>
+                            <p class="text-sm fw-semibold my-3">E-mail</p>
+                            <a href="mailto:info@tp-lab.uz" class="text-sm">info@tp-lab.uz</a>
+                            <p class="text-dirt mt-3 text-xs opacity-75">
+                                (Для официальных запросов и заявок на расчет стоимости испытаний)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="w-100 h-100 text-xl-start text-center">
+                            <i class="bi bi-geo-alt text-corp fs-1"></i>
+                            <p class="text-sm fw-semibold my-3">Адрес лаборатории</p>
+                            <p class="text-sm"> г. Ташкент, Сергелийский район, ул. Янги Сергели , д. 14 А</p>
+                            <p class="text-dirt mt-3 text-xs opacity-75">
+                                Ориентир: Промышленная зона, удобный подъезд для передачи крупногабаритных образцов
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="w-100 h-100 text-xl-start text-center">
+                            <i class="bi bi-calendar4-week text-corp fs-1"></i>
+                            <p class="text-sm fw-semibold my-3">График работы </p>
+                            <ul class="list-unstyled text-xs text-dirt opacity-75">
+                                <li class="mb-3">
+                                    Пн — Пт: 09:00 – 18:00
+                                </li>
+                                <li class="mb-3">
+                                    Сб: По предварительной договоренности (прием срочных образцов)
+                                </li>
+                                <li>
+                                    Вс: Выходной
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-lg-0 pt-5 bg-main position-relative">
+            <img src="images/contacts-page/map.png" alt="" class="img-fluid img-position-half img-position-half-75 d-lg-block d-none  h-100 object-fit-cover">
+            <div class="container">
+                <h3 class="d-lg-none title-underline text-lg w-fit-content mx-auto mb-5">Как нас найти
+                </h3>
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 py-lg-5  d-flex align-items-center">
+                            <div class="w-100 ">
+                                <h3 class="d-lg-block d-none title-underline text-lg w-fit-content">Как нас найти
+                                </h3>
+                                <p class="text-sm mt-lg-5 mt-4 fw-semibold  text-lg-start text-center">Для курьеров и логистов: </p>
+                                <p class="text-xs pe-lg-4 text-lg-start text-center">
+
+                                    Наша лаборатория расположена в индустриальном узле Сергелийского района, что обеспечивает удобную логистику для производственных предприятий Ташкента и области
+                                </p>
+                                <div class="mt-lg-5 mt-3">
+                                    <p class="text-sm mt-lg-5 mt-4 mb-4 fw-semibold  text-lg-start text-center">Открыть адрес в : </p>
+                                    <div class=" d-flex align-items-center justify-content-lg-start justify-content-center mb-lg-0 mb-5 flex-wrap gap-3">
+                                        <a href="#" class="w-lg-fit-content btn btn-corp d-flex align-items-center  justify-content-center gap-2"><span>Яндекс.Картах</span>
+                                        <img src="icons/main-icons/yandex.svg" alt=""></a>
+                                        <a href="#" class="w-lg-fit-content btn btn-outline-corp d-flex align-items-center  justify-content-center gap-2"><span>Google Maps</span>
+                                            <img src="icons/main-icons/google.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/contacts-page/map.png" alt="" class="img-fluid w-100 h-100 object-fit-cover d-lg-none">
+        </section>
+        <section class="py-lg-5">
+            <div class="container">
+                <h3 class=" title-underline text-lg w-fit-content mx-lg-0 mx-auto mb-5">Обратная связь
+                </h3>
+                <p class="text-sm my-5 text-lg-start text-center">
+                    Не нашли нужную услугу или хотите уточнить стоимость?
+                </p>
+                <p class="text-sm my-5 text-lg-start text-center">Заполните краткую форму, и наш ведущий инженер свяжется с вами</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <form action="" class="w-100">
+                            <div class="row gy-lg-5 gy-4 gx-lg-3 gx-0 w-100">
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Имя
+                                        </label>
+                                        <input type="text" placeholder="Имя" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Компания
+                                        </label>
+                                        <input type="text" placeholder="Название компании" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Телефон
+                                        </label>
+                                        <input type="tel" placeholder="+998 (_ _) _ _ _- _ _ - _ _" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            E-mail
+                                        </label>
+                                        <input type="email" placeholder="mail@example.com" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Тип материала
+                                        </label>
+                                        <input type="text" placeholder="Напрмер: полимер" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Отрасль
+                                        </label>
+                                        <input type="text" placeholder="Производство" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Описание проблемы
+                                        </label>
+                                        <textarea name="" class="form-control" rows="3" placeholder="Сообщение" id=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="w-100 file-upload-field">
+                                        <label for="tdsFile" class="form-label">
+                                            Загрузка TDS
+                                        </label>
+
+                                        <label for="tdsFile" class="file-upload-control">
+                                            <span class="file-upload-text">Выберите файл</span>
+                                            <i class="bi bi-paperclip file-upload-icon"></i>
+                                        </label>
+
+                                        <input type="file" id="tdsFile" name="tds_file" class="file-upload-input">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="w-100 file-upload-field">
+                                        <label for="coaFile" class="form-label">
+                                            Загрузка COA
+                                        </label>
+
+                                        <label for="coaFile" class="file-upload-control">
+                                            <span class="file-upload-text">Выберите файл</span>
+                                            <i class="bi bi-paperclip file-upload-icon"></i>
+                                        </label>
+
+                                        <input type="file" id="coaFile" name="coa_file" class="file-upload-input">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="w-100 file-upload-field">
+                                        <label for="defectPhoto" class="form-label">
+                                            Загрузка фото дефекта
+                                        </label>
+
+                                        <label for="defectPhoto" class="file-upload-control">
+                                            <span class="file-upload-text">Выберите файл</span>
+                                            <i class="bi bi-paperclip file-upload-icon"></i>
+                                        </label>
+
+                                        <input type="file" id="defectPhoto" name="defect_photo" class="file-upload-input" accept="image/*">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Выбор услуги
+                                        </label>
+                                        <select class="form-select">
+                                            <option selected disabled>Выберите услугу</option>
+                                            <option value="1">Испытания и контроль качества</option>
+                                            <option value="2">Анализ добавок и мастербатчей</option>
+                                            <option value="3">R&D и оптимизация процессов</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100">
+                                        <label for="" class="form-label">
+                                            Срочность
+                                        </label>
+                                        <select class="form-select">
+                                            <option selected>Стандарт</option>
+                                            <option value="1">Срочно</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="my-5 btn btn-corp bg-corp w-100 d-block">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white py-5 bg-corp ">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <img src="icons/main-icons/logo-white.svg" alt="" class="img-fluid footer-logo">
+                        <p class="my-5 text-xs">
+                            Профессиональные <br> испытания и инженерный <br> анализ полимеров
+                        </p>
+                        <p class="text-xs">
+                            Точность. Опыт, Надежность.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            УСЛУГИ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="quality-control.html">
+                                    Испытания и контроль качества
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="analysis.html">
+                                    Анализ добавок и мастербатчей
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="optimization.html">
+                                    R&D и оптимизация процессов
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="technical-consulting.html">
+                                    Технический консалтинг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="reverse-engineering.html">
+                                    Реверс-инжиниринг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="examination-of-deffects.html">
+                                    Экспертиза брака
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="arbitration-trials.html">
+                                    Арбитражные испытания
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            НАВИГАЦИЯ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="about.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="dessision.html">
+                                    Решения
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            КОНТАКТЫ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="tel:+998998738000" class="d-flex gap-1 ">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>+99899 873 80 00</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="mailto:info@tp-lab.uz" class="d-flex gap-1 ">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>info@tp-lab.uz</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <address class="d-flex gap-1 ">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>г. Ташкент, Сергелийский район, ул. Янги Сергели , д. 14 А</span>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="text-decoration-underline text-xs opacity-75 d-block text-center mt-5 pt-lg-5 fw-light">Политика кониденциальности</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>
