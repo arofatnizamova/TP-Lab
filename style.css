@@ -254,6 +254,13 @@ a {
     object-fit: cover;
 }
 
+.img-position-half {
+    position: absolute;
+    right: 0;
+    width: 48%;
+    top: 0;
+}
+
 
 /* breackpoints */
 
