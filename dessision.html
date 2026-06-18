@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-LAB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-xl-block d-none border-bottom border-light py-4 ">
+            <div class="container">
+                <div class="row  justify-content-between d-xl-flex d-none">
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100">
+                            <a href="index.html">
+                                <img src="icons/main-icons/logo.svg" alt="" class="img-fluid logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="tel:+998901557888" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                                <span>+99899 873 80 00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <a href="mailto:info@technoplastic.uz" class="d-flex gap-2 ff-second">
+                                <span>
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <span>
+                                    info@tp-lab.uz
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="w-100 h-100 d-flex align-items-center  gap-3">
+                            <button class="bg-transparent px-3 py-1 w-100 ff-second search-btn justify-content-between rounded-5 d-flex align-items-center gap-2 justify-content-start">
+                                <span>Поиск</span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar-dark navbar bg-corp text-white navbar-expand-xl sticky-lg-top">
+        <div class="container">
+            <div class="d-xl-none w-100 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img src="icons/main-icons/logo-white.svg" alt="" class="logo">
+                </a>
+
+                <div class="d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto ff-second py-3 gap-lg-5 gap-3">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Услуги
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="quality-control.html">Испытания и контроль качества</a></li>
+                                <li><a class="dropdown-item" href="analysis.html">Анализ добавок и мастербатчей</a></li>
+                                <li><a class="dropdown-item" href="optimization.html">R&D и оптимизация процессов</a></li>
+                                <li><a class="dropdown-item" href="technical-consulting.html">Технический консалтинг</a></li>
+                                <li><a class="dropdown-item" href="reverse-engineering.html">Реверс-инжиниринг</a></li>
+                                <li><a class="dropdown-item" href="examination-of-deffects.html">Экспертиза брака</a></li>
+                                <li><a class="dropdown-item" href="arbitration-trials.html">Арбитражные испытания</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="dessision.html">Решения</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Banner section -->
+        <section>
+            <div class="position-relative d-md-block d-none">
+                <div class="overlay d-xl-none position-absolute z-2 w-100 h-100 top-0 left-0">
+                </div>
+                <img src="images/dessision-page/banner-img.png" alt="" class="img-fluid w-100">
+                <div class="position-absolute w-100 h-100 z-3 top-0 left-0 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-md-12">
+                                <div class="w-100">
+
+                                    <h1 class="fw-semibold text-2xl ">
+                                        Решения
+                                    </h1>
+                                    <p class="text-md mt-5">Мы помогаем определять причины дефектов и нестабильности материалов с помощью точных лабараторных испытаний и инженерного анализа</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-none position-relative">
+                <img src="images/dessision-page/banner-img-mobile.png" alt="" class="img-fluid w-100">
+                <div class="position-relative z-2 mt-custom">
+                    <div class="container">
+                        <div class="w-100 text-center">
+                            <h1 class="fw-semibold text-2xl my-4 my-lg-5">
+                                Решения
+                            </h1>
+                            <p class="text-md ">Мы помогаем определять причины дефектов и нестабильности материалов с помощью точных лабараторных испытаний и инженерного анализа</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="d-lg-block d-none">
+                <div class="container">
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Пленки и упаковка
+                        </h3>
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Типовые проблемы
+                                            </p>
+                                        </div>
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильный COF
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Блокирование пленки
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Высокая мутность
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Гели и включения
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Миграция скользящих добавок
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Плохая прозрачность
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильная герметизация
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    UV-деструкция
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Основные испытания
+                                            </p>
+                                        </div>
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ASTM D1894 — коэффициент трения
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Мутность и прозрачность
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Прочность при растяжении
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Усадка
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    FTIR
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    DSC
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    MFI / MFR
+                                                </p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Оптический анализ
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Masterbatch и полимерные компаунды
+                        </h3>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Типовые проблемы
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Плохая дисперсия
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильный цвет
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Черные включения
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Несовместимость компонентов
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Миграция добавок
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Термодеструкция
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильная дозировка
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Основные испытания
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    MFI / MFR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Зольность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    TGA
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    FTIR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    CIE Lab
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Влажность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Плотность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Анализ дисперсии
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Трубы и профили
+                        </h3>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Типовые проблемы
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Трещины
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильная геометрия
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Низкая прочность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Слабая UV-стабильность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильное содержание сажи
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Окислительная деградация
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    UV-старение
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Основные испытания
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Плотность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Содержание сажи
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Дисперсия сажи
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Прочность при растяжении
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Ударопрочность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Окислительная стабильность
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Литье под давлением
+                        </h3>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Типовые проблемы
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Усадка
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Коробление
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Хрупкость
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильный блеск
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильный цвет
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Короткий впрыск
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Низкая ударопрочность
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Основные испытания
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    MFI / MFR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Модуль изгиба
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Прочность при растяжении
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Ударопрочность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Усадка
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    DSC
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Плотность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Стабильность цвета
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Кабельные материалы
+                        </h3>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Типовые проблемы
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильная дисперсия
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Низкая термостойкость
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Дефекты поверхности
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильный наполнитель
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Проблемы переработки
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильное содержание сажи
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Низкая ударопрочность
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Основные испытания
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Содержание сажи
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    FTIR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    TGA
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Зольность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Термостарение
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Прочность при растяжении
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Удлинение при разрыве
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Вторичные полимеры
+                        </h3>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Типовые проблемы
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильный MFI / MFR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Запах
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Загрязнения
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Деградация
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Нестабильный цвет
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Различия между партиями
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Снижение механических свойств
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Основные испытания
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    MFI / MFR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    FTIR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    DSC
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    TGA
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Влажность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Зольность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Плотность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Механические испытания
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-4 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Анализ причин дефектов
+                        </h3>
+
+                        <p class="text-sm mb-5">
+                            Когда стандартные испытания не дают ответа, TP-LAB™ проводит инженерное расследование
+                        </p>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Мы анализируем
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Сырье
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Рецептуру
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Технологический режим
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Совместимость компонентов
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Термостабильность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Наполнители
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Пигменты
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Историю переработки
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Загрязнение системы
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Стабильность процесса
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Клиент получает
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Техническое заключение
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Вероятную причину дефекта
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Подтверждающие испытания
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Рекомендации по корректировке
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Рекомендации по повторной проверке
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-4 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Лаборатория и оборудование
+                        </h3>
+
+                        <p class="text-sm mb-5">
+                            TP-LAB™ использует современные методы контроля полимерных материалов
+                        </p>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Оборудование
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    X-Rite Ci7860
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    FTIR PerkinElmer
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    DSC Analyzer
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    TGA Analyzer
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    XRF Analyzer
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    MFI Tester
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    COF Tester
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Haze Meter
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Moisture Analyzer
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Universal Testing Machine
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Назначение
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Анализ цвета CIE Lab*, ΔE
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Идентификация полимеров и добавок
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Термический анализ
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Анализ наполнителей и сажи
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Минеральный состав
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Показатель текучести расплава
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Коэффициент трения
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Мутность и прозрачность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Анализ влажности
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Прочность и растяжение
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Методы испытаний ASTM / ISO
+                        </h3>
+
+                        <div class="border line line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Метод
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ASTM D1238
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ASTM D1894
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ASTM D792
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ASTM D5630
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ASTM E308
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ASTM G154
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ISO 527
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ISO 179 / ISO 180
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    ISO 306
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    OIT (Oxidative Induction Time)
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                Назначение
+                                            </p>
+                                        </div>
+
+                                        <ul class="list-unstyled text-dirt text-sm px-4">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    MFI / MFR
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    COF
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Плотность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Зольность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Цветовые координаты CIE Lab*
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    UV-старение
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Прочность при растяжении
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Ударопрочность
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Температура размягчения по Вика
+                                                </p>
+                                            </li>
+
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">
+                                                    Время окислительной индукции
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-4 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Корпоративное сопровождение
+                        </h3>
+
+                        <p class="text-sm mb-5">
+                            TP-LAB™ предлагает предприятиям постоянную техническую поддержку и контроль качества материалов
+                        </p>
+
+                        <div class="border line line-dooble line-dark position-relative border-dark rounded-4">
+                            <div class="row gx-0">
+                                <div class="col-lg-4">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                BASIC
+                                            </p>
+                                        </div>
+
+                                        <div class="text-dirt text-sm px-4">
+                                            <p class="mb-4">
+                                                Для небольших производств
+                                            </p>
+
+                                            <p class="fw-semibold mb-3">
+                                                Включает:
+                                            </p>
+
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Базовые испытания
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Контроль входящего сырья
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Технические консультации
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Стандартные отчеты
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                PROFESSIONAL
+                                            </p>
+                                        </div>
+
+                                        <div class="text-dirt text-sm px-4">
+                                            <p class="mb-4">
+                                                Для средних производств
+                                            </p>
+
+                                            <p class="fw-semibold mb-3">
+                                                Включает:
+                                            </p>
+
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Сравнительные испытания
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Анализ брака
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Контроль партий
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Инженерные заключения
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Приоритетное обслуживание
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="w-100 h-100">
+                                        <div class="border-bottom border-dark pb-3 px-4 pt-3 mb-4">
+                                            <p class="text-corp fw-semibold text-sm mb-0">
+                                                INDUSTRIAL
+                                            </p>
+                                        </div>
+
+                                        <div class="text-dirt text-sm px-4">
+                                            <p class="mb-4">
+                                                Для крупных предприятий
+                                            </p>
+
+                                            <p class="fw-semibold mb-3">
+                                                Включает:
+                                            </p>
+
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Квалификацию поставщиков
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Аудит материалов
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        R&D поддержку
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Ежемесячный технический аудит
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Разработку SOP
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Сопровождение производства
+                                                    </p>
+                                                </li>
+
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">
+                                                        Аналитическую панель клиента
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile -->
+            <div class="d-lg-none">
+                <div class="container">
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Пленки и упаковка
+                        </h3>
+
+
+                        <div class="accordion mobile-table-accordion d-lg-none" id="filmsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filmsProblemsHeading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filmsProblems" aria-expanded="true" aria-controls="filmsProblems">
+                                        Типовые проблемы
+                                    </button>
+                                </h2>
+
+                                <div id="filmsProblems" class="accordion-collapse collapse show" aria-labelledby="filmsProblemsHeading" data-bs-parent="#filmsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильный COF</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Блокирование пленки</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Высокая мутность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Гели и включения</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Миграция скользящих добавок</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Плохая прозрачность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильная герметизация</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">UV-деструкция</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="filmsTestsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filmsTests" aria-expanded="false" aria-controls="filmsTests">
+                                        Основные испытания
+                                    </button>
+                                </h2>
+
+                                <div id="filmsTests" class="accordion-collapse collapse" aria-labelledby="filmsTestsHeading" data-bs-parent="#filmsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ASTM D1894 — коэффициент трения</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Мутность и прозрачность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Прочность при растяжении</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Усадка</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">FTIR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">DSC</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">MFI / MFR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Оптический анализ</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Masterbatch и полимерные компаунды
+                        </h3>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="masterbatchAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="masterbatchProblemsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masterbatchProblems" aria-expanded="false" aria-controls="masterbatchProblems">
+                                        Типовые проблемы
+                                    </button>
+                                </h2>
+
+                                <div id="masterbatchProblems" class="accordion-collapse collapse" aria-labelledby="masterbatchProblemsHeading" data-bs-parent="#masterbatchAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Плохая дисперсия</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильный цвет</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Черные включения</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Несовместимость компонентов</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Миграция добавок</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Термодеструкция</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильная дозировка</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="masterbatchTestsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masterbatchTests" aria-expanded="false" aria-controls="masterbatchTests">
+                                        Основные испытания
+                                    </button>
+                                </h2>
+
+                                <div id="masterbatchTests" class="accordion-collapse collapse" aria-labelledby="masterbatchTestsHeading" data-bs-parent="#masterbatchAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">MFI / MFR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Зольность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">TGA</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">FTIR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">CIE Lab</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Влажность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Плотность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Анализ дисперсии</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Трубы и профили
+                        </h3>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="pipesAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="pipesProblemsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pipesProblems" aria-expanded="false" aria-controls="pipesProblems">
+                                        Типовые проблемы
+                                    </button>
+                                </h2>
+
+                                <div id="pipesProblems" class="accordion-collapse collapse" aria-labelledby="pipesProblemsHeading" data-bs-parent="#pipesAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Трещины</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильная геометрия</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Низкая прочность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Слабая UV-стабильность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильное содержание сажи</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Окислительная деградация</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">UV-старение</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="pipesTestsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pipesTests" aria-expanded="false" aria-controls="pipesTests">
+                                        Основные испытания
+                                    </button>
+                                </h2>
+
+                                <div id="pipesTests" class="accordion-collapse collapse" aria-labelledby="pipesTestsHeading" data-bs-parent="#pipesAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Плотность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Содержание сажи</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Дисперсия сажи</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Прочность при растяжении</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Ударопрочность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Окислительная стабильность</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Литье под давлением
+                        </h3>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="injectionAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="injectionProblemsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#injectionProblems" aria-expanded="false" aria-controls="injectionProblems">
+                                        Типовые проблемы
+                                    </button>
+                                </h2>
+
+                                <div id="injectionProblems" class="accordion-collapse collapse" aria-labelledby="injectionProblemsHeading" data-bs-parent="#injectionAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Усадка</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Коробление</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Хрупкость</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильный блеск</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильный цвет</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Короткий впрыск</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Низкая ударопрочность</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="injectionTestsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#injectionTests" aria-expanded="false" aria-controls="injectionTests">
+                                        Основные испытания
+                                    </button>
+                                </h2>
+
+                                <div id="injectionTests" class="accordion-collapse collapse" aria-labelledby="injectionTestsHeading" data-bs-parent="#injectionAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">MFI / MFR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Модуль изгиба</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Прочность при растяжении</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Ударопрочность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Усадка</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">DSC</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Плотность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Стабильность цвета</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Кабельные материалы
+                        </h3>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="cableAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="cableProblemsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cableProblems" aria-expanded="false" aria-controls="cableProblems">
+                                        Типовые проблемы
+                                    </button>
+                                </h2>
+
+                                <div id="cableProblems" class="accordion-collapse collapse" aria-labelledby="cableProblemsHeading" data-bs-parent="#cableAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильная дисперсия</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Низкая термостойкость</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Дефекты поверхности</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильный наполнитель</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Проблемы переработки</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильное содержание сажи</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Низкая ударопрочность</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="cableTestsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cableTests" aria-expanded="false" aria-controls="cableTests">
+                                        Основные испытания
+                                    </button>
+                                </h2>
+
+                                <div id="cableTests" class="accordion-collapse collapse" aria-labelledby="cableTestsHeading" data-bs-parent="#cableAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Содержание сажи</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">FTIR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">TGA</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Зольность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Термостарение</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Прочность при растяжении</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Удлинение при разрыве</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-5 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Вторичные полимеры
+                        </h3>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="recycledAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="recycledProblemsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#recycledProblems" aria-expanded="false" aria-controls="recycledProblems">
+                                        Типовые проблемы
+                                    </button>
+                                </h2>
+
+                                <div id="recycledProblems" class="accordion-collapse collapse" aria-labelledby="recycledProblemsHeading" data-bs-parent="#recycledAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильный MFI / MFR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Запах</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Загрязнения</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Деградация</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Нестабильный цвет</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Различия между партиями</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Снижение механических свойств</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="recycledTestsHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#recycledTests" aria-expanded="false" aria-controls="recycledTests">
+                                        Основные испытания
+                                    </button>
+                                </h2>
+
+                                <div id="recycledTests" class="accordion-collapse collapse" aria-labelledby="recycledTestsHeading" data-bs-parent="#recycledAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">MFI / MFR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">FTIR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">DSC</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">TGA</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Влажность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Зольность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Плотность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Механические испытания</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-4 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Анализ причин дефектов
+                        </h3>
+
+                        <p class="text-sm mb-5 text-lg-start text-center">
+                            Когда стандартные испытания не дают ответа, TP-LAB™ проводит инженерное расследование
+                        </p>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="defectsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="defectsAnalyzeHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#defectsAnalyze" aria-expanded="false" aria-controls="defectsAnalyze">
+                                        Мы анализируем
+                                    </button>
+                                </h2>
+
+                                <div id="defectsAnalyze" class="accordion-collapse collapse" aria-labelledby="defectsAnalyzeHeading" data-bs-parent="#defectsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Сырье</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Рецептуру</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Технологический режим</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Совместимость компонентов</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Термостабильность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Наполнители</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Пигменты</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Историю переработки</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Загрязнение системы</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Стабильность процесса</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="defectsResultHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#defectsResult" aria-expanded="false" aria-controls="defectsResult">
+                                        Клиент получает
+                                    </button>
+                                </h2>
+
+                                <div id="defectsResult" class="accordion-collapse collapse" aria-labelledby="defectsResultHeading" data-bs-parent="#defectsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Техническое заключение</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Вероятную причину дефекта</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Подтверждающие испытания</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Рекомендации по корректировке</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Рекомендации по повторной проверке</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-4 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Лаборатория и оборудование
+                        </h3>
+
+                        <p class="text-sm mb-5 text-lg-start text-center">
+                            TP-LAB™ использует современные методы контроля полимерных материалов
+                        </p>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="labAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="labEquipmentHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#labEquipment" aria-expanded="false" aria-controls="labEquipment">
+                                        Оборудование
+                                    </button>
+                                </h2>
+
+                                <div id="labEquipment" class="accordion-collapse collapse" aria-labelledby="labEquipmentHeading" data-bs-parent="#labAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">X-Rite Ci7860</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">FTIR PerkinElmer</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">DSC Analyzer</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">TGA Analyzer</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">XRF Analyzer</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">MFI Tester</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">COF Tester</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Haze Meter</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Moisture Analyzer</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Universal Testing Machine</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="labPurposeHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#labPurpose" aria-expanded="false" aria-controls="labPurpose">
+                                        Назначение
+                                    </button>
+                                </h2>
+
+                                <div id="labPurpose" class="accordion-collapse collapse" aria-labelledby="labPurposeHeading" data-bs-parent="#labAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Анализ цвета CIE Lab*, ΔE</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Идентификация полимеров и добавок</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Термический анализ</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Анализ наполнителей и сажи</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Минеральный состав</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Показатель текучести расплава</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Коэффициент трения</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Мутность и прозрачность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Анализ влажности</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3">
+                                                <i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Прочность и растяжение</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-4 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Методы испытаний ASTM / ISO
+                        </h3>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="methodsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="methodsListHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#methodsList" aria-expanded="false" aria-controls="methodsList">
+                                        Метод
+                                    </button>
+                                </h2>
+
+                                <div id="methodsList" class="accordion-collapse collapse" aria-labelledby="methodsListHeading" data-bs-parent="#methodsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ASTM D1238</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ASTM D1894</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ASTM D792</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ASTM D5630</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ASTM E308</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ASTM G154</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ISO 527</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ISO 179 / ISO 180</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">ISO 306</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">OIT (Oxidative Induction Time)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="methodsPurposeHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#methodsPurpose" aria-expanded="false" aria-controls="methodsPurpose">
+                                        Назначение
+                                    </button>
+                                </h2>
+
+                                <div id="methodsPurpose" class="accordion-collapse collapse" aria-labelledby="methodsPurposeHeading" data-bs-parent="#methodsAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled text-dirt text-sm">
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">MFI / MFR</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">COF</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Плотность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Зольность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Цветовые координаты CIE Lab*</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">UV-старение</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Прочность при растяжении</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Ударопрочность</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Температура размягчения по Вика</p>
+                                            </li>
+                                            <li class="mb-3 d-flex align-items-center gap-3"><i class="bi bi-dash-lg text-corp"></i>
+                                                <p class="mb-0">Время окислительной индукции</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-5">
+                        <h3 class="position-relative mb-4 z-5 title-underline text-lg w-fit-content mx-lg-0 mx-auto">
+                            Корпоративное сопровождение
+
+                        </h3>
+
+                        <p class="text-sm mb-5 text-lg-start text-center">
+                            TP-LAB™ предлагает предприятиям постоянную техническую поддержку и контроль качества материалов
+                        </p>
+                        <div class="accordion mobile-table-accordion d-lg-none" id="supportAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="supportBasicHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#supportBasic" aria-expanded="false" aria-controls="supportBasic">
+                                        BASIC
+                                    </button>
+                                </h2>
+
+                                <div id="supportBasic" class="accordion-collapse collapse" aria-labelledby="supportBasicHeading" data-bs-parent="#supportAccordion">
+                                    <div class="accordion-body">
+                                        <div class="text-dirt text-sm">
+                                            <p class="mb-4">Для небольших производств</p>
+                                            <p class="fw-semibold mb-3">Включает:</p>
+
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Базовые испытания</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Контроль входящего сырья</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Технические консультации</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Стандартные отчеты</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="supportProfessionalHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#supportProfessional" aria-expanded="false" aria-controls="supportProfessional">
+                                        PROFESSIONAL
+                                    </button>
+                                </h2>
+
+                                <div id="supportProfessional" class="accordion-collapse collapse" aria-labelledby="supportProfessionalHeading" data-bs-parent="#supportAccordion">
+                                    <div class="accordion-body">
+                                        <div class="text-dirt text-sm">
+                                            <p class="mb-4">Для средних производств</p>
+                                            <p class="fw-semibold mb-3">Включает:</p>
+
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Сравнительные испытания</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Анализ брака</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Контроль партий</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Инженерные заключения</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Приоритетное обслуживание</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="supportIndustrialHeading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#supportIndustrial" aria-expanded="false" aria-controls="supportIndustrial">
+                                        INDUSTRIAL
+                                    </button>
+                                </h2>
+
+                                <div id="supportIndustrial" class="accordion-collapse collapse" aria-labelledby="supportIndustrialHeading" data-bs-parent="#supportAccordion">
+                                    <div class="accordion-body">
+                                        <div class="text-dirt text-sm">
+                                            <p class="mb-4">Для крупных предприятий</p>
+                                            <p class="fw-semibold mb-3">Включает:</p>
+
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Квалификацию поставщиков</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Аудит материалов</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">R&D поддержку</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Ежемесячный технический аудит</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Разработку SOP</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Сопровождение производства</p>
+                                                </li>
+                                                <li class="mb-3 d-flex align-items-center gap-3">
+                                                    <i class="bi bi-dash-lg text-corp"></i>
+                                                    <p class="mb-0">Аналитическую панель клиента</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white py-5 bg-corp ">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="w-100 h-100">
+                        <img src="icons/main-icons/logo-white.svg" alt="" class="img-fluid footer-logo">
+                        <p class="my-5 text-xs">
+                            Профессиональные <br> испытания и инженерный <br> анализ полимеров
+                        </p>
+                        <p class="text-xs">
+                            Точность. Опыт, Надежность.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            УСЛУГИ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="quality-control.html">
+                                    Испытания и контроль качества
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="analysis.html">
+                                    Анализ добавок и мастербатчей
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="optimization.html">
+                                    R&D и оптимизация процессов
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="technical-consulting.html">
+                                    Технический консалтинг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="reverse-engineering.html">
+                                    Реверс-инжиниринг
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="examination-of-deffects.html">
+                                    Экспертиза брака
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="arbitration-trials.html">
+                                    Арбитражные испытания
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            НАВИГАЦИЯ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="about.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="dessision.html">
+                                    Решения
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="w-100">
+                        <p class="text-uppercase fw-semibold text-sm">
+                            КОНТАКТЫ
+                        </p>
+                        <ul class="list-unstyled text-xs fw-light mb-0">
+                            <li class="mb-3">
+                                <a href="tel:+998998738000" class="d-flex gap-1 ">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>+99899 873 80 00</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="mailto:info@tp-lab.uz" class="d-flex gap-1 ">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>info@tp-lab.uz</span>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <address class="d-flex gap-1 ">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>г. Ташкент, Сергелийский район, ул. Янги Сергели , д. 14 А</span>
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="text-decoration-underline text-xs opacity-75 d-block text-center mt-5 pt-lg-5 fw-light">Политика кониденциальности</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js "></script>
+    <script src="https://kit.fontawesome.com/f817facf9f.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="main.js "></script>
+</body>
+
+</html>

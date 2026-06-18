@@ -242,6 +242,25 @@ a {
     transform: translateX(-50%);
 }
 
+.line-dooble.line::before {
+    left: 33%;
+    background: black;
+}
+
+.line-dooble.line::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: black;
+    right: 33%;
+    top: 0;
+}
+
+.line-dark.line::before {
+    background: black;
+}
+
 .bg-element {
     height: 60%;
     bottom: 0;
@@ -351,6 +370,57 @@ textarea.form-control {
 
 .file-upload-text.file-selected {
     color: #222;
+}
+
+.mobile-table-accordion .accordion-item {
+    border: 1px solid #333;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    background: #fff;
+}
+
+.mobile-table-accordion .accordion-button {
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-corp);
+    background: #fff;
+    box-shadow: none;
+}
+
+.mobile-table-accordion .accordion-button:not(.collapsed) {
+    color: var(--color-corp);
+    background: #fff;
+    box-shadow: none;
+    border-bottom: 1px solid #333;
+}
+
+.mobile-table-accordion .accordion-button::after {
+    background-image: none;
+    content: '+';
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    line-height: 1;
+    transform: none;
+}
+
+.mobile-table-accordion .accordion-button:not(.collapsed)::after {
+    content: '−';
+    transform: none;
+}
+
+.mobile-table-accordion .accordion-body {
+    padding: 16px 14px 18px;
+}
+
+.mobile-table-accordion ul {
+    margin-bottom: 0;
+}
+
+.mobile-table-accordion li:last-child {
+    margin-bottom: 0 !important;
 }
 
 
