@@ -2,6 +2,13 @@
     --font-family-main: 'Exo 2', sans-serif;
     --font-family-2: 'Inter', sans-serif;
     --color-corp: #28406D;
+    --text-2xl: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
+    --text-xl: clamp(1.625rem, 1.325rem + 1.5vw, 3.125rem);
+    --text-lg: clamp(1.5rem, 1.25rem + 1.25vw, 2.75rem);
+    --text-md: clamp(1.125rem, 1rem + 0.625vw, 1.75rem);
+    --text-sm: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+    --text-xs: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+    --text-2xs: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
 }
 
 body {
@@ -18,31 +25,31 @@ a {
 /* typography */
 
 .text-2xl {
-    font-size: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
+    font-size: var(--text-2xl);
 }
 
 .text-xl {
-    font-size: clamp(1.625rem, 1.325rem + 1.5vw, 3.125rem);
+    font-size: var(--text-xl);
 }
 
 .text-lg {
-    font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.75rem);
+    font-size: var(--text-lg);
 }
 
 .text-md {
-    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.75rem);
+    font-size: var(--text-md);
 }
 
 .text-sm {
-    font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+    font-size: var(--text-sm);
 }
 
 .text-xs {
-    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+    font-size: var(--text-xs);
 }
 
 .text-2xs {
-    font-size: clamp(0.75rem, 0.725rem + 0.125vw, 0.875rem);
+    font-size: var(--text-2xs);
 }
 
 
@@ -84,7 +91,7 @@ a {
     border-radius: 43px;
     width: 200px;
     padding: 10px 0;
-    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+    font-size: var(--text-xs);
 }
 
 .btn-corp {
@@ -115,6 +122,7 @@ a {
 .nav-link {
     color: white;
     font-weight: 300;
+    font-size: var(--text-xs);
 }
 
 .navbar-toggler-icon {
@@ -131,6 +139,11 @@ a {
     display: none;
 }
 
+.dropdown-menu {
+    right: 0 !important;
+    left: unset !important;
+    z-index: 9999999;
+}
 
 /* custom styles */
 
@@ -181,7 +194,7 @@ a {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 50%;
+    height: 100%;
 }
 
 .timeline-container {
@@ -426,6 +439,83 @@ textarea.form-control {
 
 /* breackpoints */
 
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .container {
+        max-width: 2100px;
+    }
+
+    :root {
+        --text-2xl: 4.5rem;
+        /* 72px */
+        --text-xl: 3.75rem;
+        /* 60px */
+        --text-lg: 3.25rem;
+        /* 52px */
+        --text-md: 2rem;
+        /* 32px */
+        --text-sm: 1.625rem;
+        /* 26px */
+        --text-xs: 1.125rem;
+        /* 18px */
+        --text-2xs: 1rem;
+        /* 16px */
+    }
+}
+
+@media (min-width: 3440px) {
+    .container {
+        max-width: 2600px;
+    }
+
+    :root {
+        --text-2xl: 5.25rem;
+        /* 84px */
+        --text-xl: 4.5rem;
+        /* 72px */
+        --text-lg: 3.75rem;
+        /* 60px */
+        --text-md: 2.25rem;
+        /* 36px */
+        --text-sm: 1.75rem;
+        /* 28px */
+        --text-xs: 1.25rem;
+        /* 20px */
+        --text-2xs: 1.125rem;
+        /* 18px */
+    }
+}
+
+@media (min-width: 5000px) {
+    :root {
+        --text-2xl: 6rem;
+        /* 96px */
+        --text-xl: 5rem;
+        /* 80px */
+        --text-lg: 4.25rem;
+        /* 68px */
+        --text-md: 2.5rem;
+        /* 40px */
+        --text-sm: 2rem;
+        /* 32px */
+        --text-xs: 1.375rem;
+        /* 22px */
+        --text-2xs: 1.25rem;
+        /* 20px */
+    }
+}
+
+@media (min-width: 5120px) {
+    .container {
+        max-width: 3900px;
+    }
+}
+
 @media(min-width: 1400px) {
     .border-xxl-start {
         border-left: 1px solid #E2E2E2;
@@ -436,9 +526,11 @@ textarea.form-control {
     .logo {
         width: 120px;
     }
+
     .mt-custom {
         margin-top: -650px;
     }
+
     .table-line::before {
         display: none;
     }
@@ -448,22 +540,27 @@ textarea.form-control {
     .w-lg-fit-content {
         width: 100%;
     }
+
     .timeline-container::before {
         width: 4px;
         height: 100%;
     }
+
     .timeline-container .row>.col-lg-4:not(:last-child) .timeline::before {
         width: 4px;
         height: 100%;
     }
+
     .timeline-circle {
         top: 0;
         left: -7px;
         z-index: 3;
     }
+
     .line::before {
         display: none;
     }
+
     .bg-element {
         height: 50%;
         bottom: unset;
@@ -471,9 +568,11 @@ textarea.form-control {
         transform: translateY(-50%);
         right: 0;
     }
+
     .btn-long {
         min-width: 250px;
     }
+
     .overlay-corp {
         display: none;
     }
@@ -483,9 +582,11 @@ textarea.form-control {
     .mt-custom {
         margin-top: -250px;
     }
+
     .icon-size-sm {
         height: 40px;
     }
+
     .footer-logo {
         width: 150px;
     }
